@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Desafio_estilo.css">
+    <script type="text/javascript" src="Desafio_interatividade.js"></script>
+    <title>Leitor de Código de Barras</title>
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <header>Leitor de Código de Barras</header>
+
+        <form method="post" action="codigo_barras.php">
+        <fieldset>
+                <legend>Informações do Pedido</legend><p></p>    
+            <div id="formulario">
+                <div id="formulario_preencher">
+                    <label for="regiao_origem">Região de Origem:</label>
+                    <input class="campo" name="regiao_origem" id="regiao_origem" type="text" placeholder="000" maxlength="3" required/>
+                   
+                    <label for="regiao_destino">Região de Destino:</label>
+                    <input class="campo" name="regiao_destino" id="regiao_destino" type="text" placeholder="000" maxlength="3" required/>
+                    
+                    <label for="cod_loggi">Código Loggi:</label>
+                    <input type="text" name="cod_loggi" id="cod_loggi" class="campo" v-model=555 value="555" placeholder="000" maxlength="3" required/>
+                
+                    <label for="cod_vendedor">Código do Vendedor:</label>
+                    <input class="campo" name="cod_vendedor" id="cod_vendedor" type="text" placeholder="000" maxlength="3" required/>
+                            
+                    <label for="tipo_produto">Tipo do Produto:</label>
+                    <input class="campo" name="tipo_produto" id="tipo_produto" type="text" placeholder="000" maxlength="3" required/><p></p>
+                    
+                    <button onClick="validar()" type="submit" id="salvar" class="salvar" value="Exibir Alert">Gerar</button>
+                
+                </div>
+            </div> 
+        </fieldset>   
+    </form>
+
+
+        <!--<fieldset>
+            <legend>Informações do Código de Barras</legend>
+            <label class="cod_completo" id="cod_completo">Código Completo:</label>
+            <input type="text" class="cod_completo" placeholder="000.000.000.000.000" maxlength="19" required/>
+        </fieldset><p></p>
+
+        <button onclick="confirmar()" type="submit" id="salvar" class="salvar" value="Exibir Alert">Relatório</button><p></p>-->
+
+</body>
+</html>
