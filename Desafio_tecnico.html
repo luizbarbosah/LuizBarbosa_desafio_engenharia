@@ -14,10 +14,9 @@
 </head>
 <body>
     <header>Leitor de Código de Barras</header>
-
-        <form method="post" action="codigo_barras.php">
+    <form method="post" action="codigo_barras.php">
         <fieldset>
-                <legend>Informações do Pedido</legend><p></p>    
+           <legend>Informações do Pedido</legend><p></p>    
             <div id="formulario">
                 <div id="formulario_preencher">
                     <label for="regiao_origem">Região de Origem:</label>
@@ -36,20 +35,9 @@
                     <input class="campo" name="tipo_produto" id="tipo_produto" type="text" placeholder="000" maxlength="3" required/><p></p>
                     
                     <button onClick="validar()" type="submit" id="salvar" class="salvar" value="Exibir Alert">Gerar</button>
-                
                 </div>
             </div> 
         </fieldset>   
     </form>
-
-
-        <!--<fieldset>
-            <legend>Informações do Código de Barras</legend>
-            <label class="cod_completo" id="cod_completo">Código Completo:</label>
-            <input type="text" class="cod_completo" placeholder="000.000.000.000.000" maxlength="19" required/>
-        </fieldset><p></p>
-
-        <button onclick="confirmar()" type="submit" id="salvar" class="salvar" value="Exibir Alert">Relatório</button><p></p>-->
-
 </body>
 </html>
